@@ -1,4 +1,7 @@
- const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+import { head } from './common.js'
+
+head();
+const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
     
     accordionItemHeaders.forEach(accordionItemHeader => {
       accordionItemHeader.addEventListener("click", event => {

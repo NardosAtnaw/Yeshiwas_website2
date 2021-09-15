@@ -1,0 +1,273 @@
+.practice-header {
+  height: 50vh;
+  background: rgba(16, 40, 78, 0.4) url(../Image/pra.jpg) no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: center center;
+  position: relative;
+  z-index: -1;
+  .container {
+    height: 100%;
+    .practice-homebg {
+      height: 100%;
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        .logo {
+          img {
+            width: 6rem;
+          }
+        }
+        .practice-cont1 {
+          display: none;
+          ul {
+            display: flex;
+            li {
+              a {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .rank {
+        position: absolute;
+        bottom: 6.13rem;
+        color: #fff;
+        text-align: center;
+        h1 {
+          b {
+            font-size: 2.63rem;
+          }
+          span {
+            font-size: 1.38rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.consultation {
+  margin-top: -4.25rem;
+  .container {
+    width: 90%;
+    height: auto;
+    z-index: 9999999;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.25rem;
+    .myform {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      input {
+        padding: 1rem 0.5rem;
+        width: 100%;
+        margin-bottom: 1.19rem;
+        border: none;
+        background: rgba(53, 198, 218, 0.1);
+      }
+      .text-area {
+        padding-bottom: 4.44rem;
+        margin-bottom: 0.56rem;
+      }
+      input::placeholder {
+        color: #000;
+      }
+      h2 {
+        margin-bottom: 1.56rem;
+        text-align: center;
+      }
+      button {
+        padding: 0.5rem 2.88rem;
+        border: none;
+        background: #10284e;
+        color: #fff;
+        width: 8.25rem;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+.practice {
+  margin-top: 1.63rem;
+  .container {
+    h1 {
+      font-size: 1.13rem;
+    }
+    hr {
+      background: #10284e;
+      height: 3px;
+      border: none;
+    }
+    .areas {
+      margin-top: 1.5rem;
+      .area-img {
+        margin-top: 1.19rem;
+
+        display: flex;
+        img {
+          width: 5rem;
+        }
+        .area-title {
+          margin-top: 2rem;
+          margin-left: 1rem;
+        }
+      }
+
+      .area-des {
+        margin-top: 1.3rem;
+      }
+    }
+  }
+}
+.contact-form {
+  margin-top: 1.63rem;
+  .container {
+    h1 {
+      font-size: 1.13rem;
+    }
+    hr {
+      background: #10284e;
+      height: 3px;
+      border: none;
+    }
+    .cont-ful-form {
+      margin-top: 1.5rem;
+      width: 100%;
+      height: auto;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 1.25rem;
+      .cont-info {
+        font-size: 16px;
+        padding: 1rem;
+        color: #10284e;
+        .cont-cont {
+          img {
+            margin-right: 1.33rem;
+          }
+          color: #10284e;
+          font-size: 14px;
+          margin-top: 1.8rem;
+          margin-bottom: 0.8rem;
+        }
+      }
+      .cont-form {
+        width: 100%;
+        height: auto;
+        background: #ddf8fc;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 0 0 1.2rem 1.2rem;
+        .cont-myform {
+            
+            .myform {
+              display: flex;
+              flex-direction: column;
+              padding: 1rem;
+              input {
+                padding: 1rem 0.5rem;
+                width: 100%;
+                margin-bottom: 1.19rem;
+                border: none;
+                background: rgba(255, 255, 255,1);
+              }
+              .text-area {
+                padding-bottom: 4.44rem;
+                margin-bottom: 0.56rem;
+              }
+              input::placeholder {
+                color: #000;
+              }
+              h2 {
+                margin-bottom: 0.16rem;
+                text-align: center;
+              }
+              h5{
+                margin-bottom: 0.2rem;
+                text-align: center;  
+              }
+              button {
+                padding: 0.5rem 2.88rem;
+                border: none;
+                background: #10284e;
+                color: #fff;
+                width: 8.25rem;
+                align-self: flex-end;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+footer {
+  background: url(../Image/footerbg.svg) no-repeat ;
+  height: 70vh;
+  .contanier{
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+    .footer-logo{
+      display:flex;
+    
+      img{
+        margin-top: 5.88rem;
+       
+      }
+      .footer-moto{
+        margin-top: 7.01rem;
+        margin-left: 0.88rem;
+        color:white;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+   .footer-info{
+    margin-top: 1.05rem;
+    color:#fff;
+    h3{
+      color:#fff;
+      font-size: 18px;
+      margin-top: 0.5rem;
+    }
+     .fo-des{
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+     }
+   }
+   .footer-contact{
+    h3{
+      color:#fff;
+      font-size: 18px;
+      margin-top: 0.5rem;
+    }
+    .fo-cont{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      font-size: 14px;
+      .fo-li{
+        margin-top: 1rem;
+      }
+    }
+img{
+  margin-top: 0.5rem;
+  margin-right: 1.66rem;
+}
+   }
+.fo-copy{
+  margin-top:3.98rem ;
+  margin-left: 5.98rem ;
+  margin-bottom: .5rem;
+  color:white ;
+  font-size: 10px;
+}
+  }
+
+}
