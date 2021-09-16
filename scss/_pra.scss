@@ -1,0 +1,38 @@
+.prac-header {
+    height: 50vh;
+    background: rgba(16, 40, 78, 0.4) url(../Image/prac.jpg) ;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center center;
+    position: relative;
+    z-index: -1;
+
+  }
+  .practice {
+    margin-top: 1.63rem;
+    .container {
+      h1 {
+        font-size: 1.13rem;
+      }
+      hr {
+        background: #10284e;
+        height: 3px;
+        border: none;
+      }
+   
+      }
+      .pra-des{
+          margin-left: 5%;
+          margin-right: 5%;
+        .pra-img{
+            margin-top:1.5rem;
+            display: flex;
+            .pra-title{
+                margin-top: 1.4rem;
+                font-size: 18px;
+                color: #10284e;
+                margin-left: 2rem;
+            }
+        }
+    }
+  }
