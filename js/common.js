@@ -19,7 +19,7 @@ function head(){
           <li><a href="index.html">Home</a></li>
           <li><a href="whyyeshiwas.html">Why Yeshiwas?</a></li>
           <li><a href="Practice.html">Practice Areas</a></li>
-          <li><a href="OurTeam.html">Our Team</a></li>
+          <li><a href="team.html">Our Team</a></li>
           <li><a href="Contactus.html">Contact Us</a></li>
         </ul>
       </div>`

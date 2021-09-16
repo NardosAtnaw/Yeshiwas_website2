@@ -208,19 +208,20 @@
 
 footer {
   margin-top: 2rem;
- position: relative;
+  position: relative;
 
   width: 100%;
   height: 100%;
-  picture{
+  picture {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     z-index: -1;
-    img{
+    img {
       width: 100%;
+      height: 100%;
       object-fit: cover;
     }
   }
@@ -228,10 +229,10 @@ footer {
     z-index: 999;
     margin-left: 1.8rem;
     margin-right: 1.8rem;
-  
+
     .footer-logo {
       display: flex;
-      
+
       img {
         margin-top: 8.88rem;
       }
@@ -279,7 +280,7 @@ footer {
   }
   .fo-copy {
     margin-top: 3.7rem;
-   text-align: center;
+    text-align: center;
 
     color: white;
     font-size: 10px;
@@ -433,17 +434,21 @@ footer {
 
   footer {
     position: relative;
-
-  width: 100%;
-  height: 100%;
-  picture{
-    position: absolute;
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    width: 100%;
+    height: 100%;
+    picture {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
-  }
     .contanier {
       margin-left: 4.8rem;
       margin-right: 4.8rem;
@@ -454,7 +459,6 @@ footer {
           margin-top: 10.88rem;
           margin-left: 1.88rem;
           width: 8.75rem;
-          
         }
         .footer-moto {
           margin-top: 15.01rem;
@@ -490,7 +494,7 @@ footer {
           margin-bottom: 1rem;
           color: #fff;
           font-size: 22px;
-          
+
           .fo-li {
             margin-top: 1rem;
           }
@@ -560,7 +564,7 @@ footer {
     margin-top: -15.25rem;
     .container {
       width: 30%;
-      margin-right:100px ;
+      margin-right: 100px;
       height: auto;
       z-index: 9999999;
       background: #ffffff;
@@ -602,7 +606,6 @@ footer {
   .practice {
     margin-top: 1.63rem;
     .container {
-
       h1 {
         font-size: 28px;
         color: #10284e;
@@ -616,7 +619,7 @@ footer {
         margin-top: 1.5rem;
         .area-img {
           margin-top: 1.19rem;
-  
+
           display: flex;
           img {
             width: 7rem;
@@ -626,7 +629,7 @@ footer {
             margin-left: 3rem;
           }
         }
-  
+
         .area-des {
           margin-top: 1.3rem;
         }
@@ -659,6 +662,7 @@ footer {
           padding: 1rem;
           color: #10284e;
           .cont-cont {
+            margin-top: 3rem;
             img {
               margin-right: 1.33rem;
             }
@@ -670,13 +674,12 @@ footer {
         }
         .cont-form {
           width: 100%;
-          
+
           height: auto;
           background: #ddf8fc;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           border-radius: 0 0 1.2rem 1.2rem;
           .cont-myform {
-           
             .myform {
               display: flex;
               flex-direction: column;
@@ -720,73 +723,82 @@ footer {
   footer {
     margin-top: 2rem;
     position: relative;
-   
-     width: 100%;
-     height: 45.5rem;
-     picture{
-       position: absolute;
-       top: 0;
-       right: 0;
-       left: 0;
-       bottom: 0;
-       z-index: -1;
-       img{
-         width: 100%;
-         object-fit: cover;
-       }
-     }
-     .contanier {
-       z-index: 999;
-       margin-left: 1.8rem;
-       margin-right: 1.8rem;
-      margin-left: 10.8rem;
-      margin-right: 5.8rem;
-      display: flex;
-      z-index: 999999;
-      .footer-logo {
-        display: flex;
 
+    width: 100%;
+    height: 45.5rem;
+    picture {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .contanier {
+      z-index: 999;
+      margin-left: 3rem;
+      margin-right: 2rem;
+      display: flex;
+      .footer-logo {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
         img {
-          margin-top: 10rem;
-          margin-left: 1.88rem;
-          width: 8.75rem;
-          
+          margin-left: 4.88rem;
+          width: 10.75rem;
+          display: block;
         }
         .footer-moto {
-          margin-top:10rem;
-          margin-left: 1.88rem;
+          margin-top: 1.5rem;
+          margin-left: 0;
           color: white;
           font-size: 28px;
+          width: 80%;
           text-align: center;
         }
       }
       .footer-info {
-        margin-top: 10rem;
+        margin-top: 18rem;
         margin-left: 1.88rem;
+        margin-right: 1.88rem;
         color: #fff;
+        width: 40%;
         h3 {
           color: #fff;
-          font-size: 24px;
+          font-size: 28px;
           margin-top: 0.5rem;
+          text-align: center;
+          
         }
         .fo-des {
-        
+          width: 20.5rem;
+          font-size:18px;
           margin-bottom: 1rem;
+          margin-left: 7.88rem;
+          text-align: center;
+         
+
         }
       }
       .footer-contact {
         margin-left: 1.88rem;
         h3 {
           color: #fff;
-          font-size: 24px;
-          margin-top: 0.5rem;
+          font-size: 28px;
+          margin-top: 16rem;
+          text-align: center;
         }
         .fo-cont {
-          margin-top: 1rem;
+          margin-top: 0.5remrem;
           margin-bottom: 1rem;
           color: #fff;
           font-size: 22px;
-          
+
           .fo-li {
             margin-top: 1rem;
           }
@@ -798,11 +810,10 @@ footer {
       }
     }
     .fo-copy {
-      margin-top: 2.98rem;
+      margin-top: 8.98rem;
       text-align: center;
       color: white;
       font-size: 20px;
     }
   }
 }
-

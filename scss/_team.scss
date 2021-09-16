@@ -1,0 +1,428 @@
+.team-header {
+  height: 50vh;
+  background: rgba(16, 40, 78, 0.4) url(../Image/ourteam.jpg) no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: center center;
+  position: relative;
+  z-index: -1;
+  .container {
+    height: 100%;
+
+    .team-homebg {
+      height: 100%;
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        .logo {
+          img {
+            width: 6rem;
+          }
+        }
+        .team-cont1 {
+          display: none;
+          ul {
+            display: flex;
+            li {
+              a {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .rank {
+        position: absolute;
+        bottom: 6.13rem;
+        color: #fff;
+        text-align: center;
+        h1 {
+          b {
+            font-size: 2.63rem;
+          }
+          span {
+            font-size: 1.38rem;
+          }
+        }
+      }
+    }
+  }
+  .team-fade {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15.5rem;
+    background: linear-gradient(
+      180deg,
+      rgba(196, 196, 196, 0.03) 32.29%,
+      #ffffff 95.83%
+    );
+  }
+}
+
+.team-cont {
+  margin-top: 1.63rem;
+  .container {
+    h1 {
+      font-size: 1.13rem;
+      color: #10284e;
+    }
+    hr {
+      background: #10284e;
+      height: 3px;
+      border: none;
+    }
+  }
+  .team-container {
+    margin-top: 50px;
+    width: 100%;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .team-container .team {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .team-container .team .member {
+    width: 625px;
+    margin: 10px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    padding: 25px;
+  }
+
+  .team-container .team .member img {
+    width: 180px;
+  }
+
+  .team-container .team .member h3 {
+    font-size: 25px;
+    color: #10284e;
+  }
+
+  .team-container .team .member span {
+    font-size: 22px;
+    color: #10284e;
+  }
+
+  .team-container .team .member p {
+    margin: 15px 0;
+    font-weight: 300;
+    color: #003dc9;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.pract-cont {
+  margin-top: 1.63rem;
+  margin-left: 0.9rem;
+  margin-right: 0.9rem;
+  .container {
+    h1 {
+      font-size: 1.13rem;
+      color: #10284e;
+    }
+    hr {
+      background: #10284e;
+      height: 3px;
+      border: none;
+    }
+  }
+
+  .pra-left {
+    margin-top: 2rem;
+    .pra-list {
+      display: flex;
+      margin-top: 1rem;
+      .pra-img {
+        img {
+          width: 5rem;
+        }
+      }
+      .pra-des {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+}
+@include responsive($md) {
+  .pract-cont {
+    margin-top: 1.63rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    .container {
+      h1 {
+        font-size: 1.13rem;
+      }
+      hr {
+        background: #10284e;
+        height: 3px;
+        border: none;
+      }
+    }
+
+    .pra-left {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 2rem;
+      .pra-list {
+        display: flex;
+        margin-top: 1rem;
+        .pra-img {
+          img {
+            width: 5rem;
+          }
+        }
+        .pra-des {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@include responsive($lg) {
+  .team-header {
+    height: 90vh;
+    background: rgba(16, 40, 78, 0.4) url(../Image/ourteam.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center center;
+    position: relative;
+    z-index: -1;
+    .container {
+      height: 100%;
+      .team-homebg {
+        height: 100%;
+        .nav {
+          .logo {
+            img {
+              width: 8rem;
+            }
+          }
+          .team-cont1 {
+            display: block;
+            ul {
+              display: flex;
+              li {
+                a {
+                  color: #fff;
+                }
+              }
+            }
+          }
+          .menu {
+            display: none;
+          }
+        }
+        .rank {
+          h1 {
+            b {
+              font-size: 5.63rem;
+            }
+            span {
+              font-size: 2.38rem;
+            }
+          }
+        }
+      }
+    }
+    .team-fade {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 15.5rem;
+      background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0.03) 32.29%,
+        #ffffff 95.83%
+      );
+    }
+  }
+  .team-cont {
+    margin-top: 1.63rem;
+    .container {
+      h1 {
+        font-size: 28px;
+        color: #10284e;
+      }
+      hr {
+        background: #10284e;
+        height: 3px;
+        border: none;
+      }
+    }
+    .team-container {
+      margin-top: 50px;
+      width: 100%;
+      img {
+        border-radius: 50%;
+      }
+    }
+    .team-container .team {
+      width: auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+  
+    .team-container .team .member {
+      width: 625px;
+      margin: 10px;
+      border-radius: 6px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+      padding: 25px;
+    }
+  
+    .team-container .team .member img {
+      width: 180px;
+    }
+  
+    .team-container .team .member h3 {
+      font-size: 25px;
+      color: #10284e;
+    }
+  
+    .team-container .team .member span {
+      font-size: 22px;
+      color: #10284e;
+    }
+  
+    .team-container .team .member p {
+      margin: 15px 0;
+      font-weight: 300;
+      color: #003dc9;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .pract-cont {
+    margin-top: 1.63rem;
+
+    .container {
+      h1 {
+        font-size: 36px;
+      }
+      hr {
+        background: #10284e;
+        height: 3px;
+        border: none;
+      }
+    }
+
+    .pra-left {
+        margin-left: 2.9rem;
+        margin-right: 2.9rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 2rem;
+      .pra-list {
+        display: flex;
+        margin-top: 1rem;
+        width: 45.44rem;
+        .pra-img {
+          img {
+            width: 5rem;
+          }
+        }
+        .pra-des {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .contact-form {
+    margin-top: 1.63rem;
+    .container {
+      h1 {
+        font-size: 28px;
+        color: #10284e;
+      }
+      hr {
+        background: #10284e;
+        height: 3px;
+        border: none;
+      }
+      .cont-ful-form {
+        display: flex;
+        margin-top: 1.5rem;
+        width: 100%;
+        height: auto;
+        background: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 1.25rem;
+        .cont-info {
+          width: 50%;
+          font-size: 22px;
+          padding: 1rem;
+          color: #10284e;
+          .cont-cont {
+            margin-top: 3rem;
+            img {
+              margin-right: 1.33rem;
+            }
+            color: #10284e;
+            font-size: 20px;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+          }
+        }
+        .cont-form {
+          width: 100%;
+          height: auto;
+          background: #ddf8fc;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          border-radius: 0 0 1.2rem 1.2rem;
+          .cont-myform {
+            .myform {
+              display: flex;
+              flex-direction: column;
+              padding: 1rem;
+              input {
+                padding: 1rem 0.5rem;
+                width: 100%;
+                margin-bottom: 1.19rem;
+                border: none;
+                background: rgba(255, 255, 255, 1);
+              }
+              .text-area {
+                padding-bottom: 4.44rem;
+                margin-bottom: 0.56rem;
+              }
+              input::placeholder {
+                color: #000;
+              }
+              h2 {
+                margin-bottom: 0.16rem;
+                text-align: center;
+              }
+              h5 {
+                margin-bottom: 0.2rem;
+                text-align: center;
+              }
+              button {
+                padding: 0.5rem 2.88rem;
+                border: none;
+                background: #10284e;
+                color: #fff;
+                width: 10.25rem;
+                align-self: flex-end;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
