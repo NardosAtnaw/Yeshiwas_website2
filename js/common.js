@@ -3,7 +3,7 @@ function head(){
     const header = document.getElementById('header')
     
     header.innerHTML = `<section class="homebg">
-    <img class="imagebg" src="Image/cover.svg" />
+    <img class="imagebg" src="Image/yesh.jpg" />
     
     <section class="header1">
       <div class="logo">

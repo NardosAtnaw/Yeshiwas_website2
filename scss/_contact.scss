@@ -27,6 +27,7 @@
               ul {
                 display: flex;
                 li {
+                  z-index: 999;
                   a {
                     color: #fff;
                   }
@@ -61,4 +62,72 @@
           #ffffff 95.83%
         );
       }
+  }
+  @include responsive($lg) {
+    .contact-header {
+      height: 100vh;
+      background: rgba(16, 40, 78, 0.4) url(../Image/contact.jpg) no-repeat;
+      background-size: cover;
+      background-blend-mode: overlay;
+      background-position: center center;
+      position: relative;
+      z-index: -1;
+      .container {
+          height: 100%;
+      
+          .contact-homebg {
+            height: 100%;
+      
+            .nav {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              color: #fff;
+              .logo {
+                img {
+                  width: 6rem;
+                }
+              }
+              .contact-cont1 {
+                display: block;
+                ul {
+                  display: flex;
+                  li {
+                    a {
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+            
+            .rank {
+              position: absolute;
+              bottom: 6.13rem;
+              color: #fff;
+              text-align: center;
+              h1 {
+                b {
+                  font-size: 36px;
+                }
+                span {
+                  font-size: 1.38rem;
+                }
+              }
+            }
+          }
+        }
+      .contact-fade {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 15.5rem;
+          background: linear-gradient(
+            180deg,
+            rgba(196, 196, 196, 0.03) 32.29%,
+            #ffffff 95.83%
+          );
+        }
+    }
+
   }

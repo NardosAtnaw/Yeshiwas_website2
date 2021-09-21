@@ -77,11 +77,241 @@
             }
         }
     }
+    
   }
+@include responsive($md) {
+  .prac-header {
+    .container {
+      height: 100%;
+      .prac-homebg {
+        height: 100%;
+        .nav {
+          .logo {
+            img {
+              width: 8rem;
+            }
+          }
+        }
+        .rank {
+          h1 {
+            b {
+              font-size: 5.63rem;
+            }
+            span {
+              font-size: 2.38rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .consultation {
+    .container {
+      border-radius: 2.25rem;
+      .myform {
+        h2 {
+          font-size: 24px;
+        }
+        input {
+          padding: 1.3rem 0.5rem;
+          font-size: 18px;
+        }
+        .text-area {
+          padding-bottom: 4.44rem;
+          margin-bottom: 0.56rem;
+        }
+        input::placeholder {
+          color: #000;
+        }
+        h2 {
+          margin-bottom: 1.56rem;
+          text-align: center;
+        }
+        button {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .practice {
+    margin-top: 1.63rem;
+    .container {
+      h1 {
+        font-size: 1.13rem;
+      }
+
+      .areas {
+        margin-top: 1.5rem;
+        .area-img {
+          margin-top: 1.19rem;
+
+          display: flex;
+          img {
+            width: 8rem;
+          }
+          .area-title {
+            margin-top: 2rem;
+            margin-left: 1.5rem;
+            font-size: 24px;
+          }
+        }
+        .area-des {
+          margin-top: 1.3rem;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    margin-top: 1.63rem;
+    .container {
+      h1 {
+        font-size: 2.13rem;
+      }
+      hr {
+        background: #10284e;
+        height: 3px;
+        border: none;
+      }
+      .cont-ful-form {
+        .cont-info {
+          font-size: 22px;
+          padding: 1rem;
+          color: #10284e;
+          .cont-cont {
+            img {
+              margin-right: 1.33rem;
+            }
+            color: #10284e;
+            font-size: 20px;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+          }
+        }
+        .cont-form {
+          .cont-myform {
+            .myform {
+              display: flex;
+              flex-direction: column;
+              padding: 1rem;
+              input {
+                font-size: 20px;
+              }
+              .text-area {
+                padding-bottom: 4.44rem;
+                margin-bottom: 0.56rem;
+              }
+              input::placeholder {
+                color: #000;
+              }
+              h2 {
+                margin-bottom: 0.16rem;
+                text-align: center;
+                font-size: 28px;
+              }
+              h5 {
+                margin-bottom: 0.2rem;
+                text-align: center;
+                font-size: 20px;
+              }
+              button {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    picture {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .contanier {
+      margin-left: 4.8rem;
+      margin-right: 4.8rem;
+      .footer-logo {
+        display: flex;
+
+        img {
+          margin-top: 10.88rem;
+          margin-left: 1.88rem;
+          width: 8.75rem;
+        }
+        .footer-moto {
+          margin-top: 15.01rem;
+          margin-left: 1.88rem;
+          color: white;
+          font-size: 28px;
+          text-align: center;
+        }
+      }
+      .footer-info {
+        margin-top: 1.05rem;
+        margin-left: 1.88rem;
+        color: #fff;
+        h3 {
+          color: #fff;
+          font-size: 24px;
+          margin-top: 0.5rem;
+        }
+        .fo-des {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+      .footer-contact {
+        margin-left: 1.88rem;
+        h3 {
+          color: #fff;
+          font-size: 24px;
+          margin-top: 0.5rem;
+        }
+        .fo-cont {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          color: #fff;
+          font-size: 22px;
+
+          .fo-li {
+            margin-top: 1rem;
+          }
+        }
+        img {
+          margin-top: 0.5rem;
+          margin-right: 1.66rem;
+        }
+      }
+    }
+    .fo-copy {
+      margin-top: 2.98rem;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+    }
+  }
+}
+
+
   @include responsive($lg) {
     .prac-header {
-      height: 90vh;
-      background: rgba(16, 40, 78, 0.4) url(../Image/pra.jpg) no-repeat;
+      height: 100vh;
+      background: rgba(16, 40, 78, 0.4) url(../Image/prac.jpg) no-repeat;
       background-size: cover;
       background-blend-mode: overlay;
       background-position: center center;
@@ -92,6 +322,7 @@
         .prac-homebg {
           height: 100%;
           .nav {
+            
             .logo {
               img {
                 width: 8rem;
@@ -100,13 +331,41 @@
             .prac-cont1 {
               display: block;
               ul {
-                display: flex;
+                color: #003dc9;
+                top: 0em;
                 li {
+                
+                  display: inline-block;
+                  line-height: 80px;
+                  margin: 0 5px;
+                  position: relative;
+    
                   a {
-                    color: #fff;
+                    color: #10284e;
+                    font-size: 25px;
+                    padding: 7px 13px;
+                    border-radius: 3px;
+                    &::after {
+                      content: "";
+                      position: absolute;
+                      background-color: #10284e;
+                      height: 2px;
+                      width: 0%;
+                      left: 0;
+                      bottom: -10px;
+                      transition: 0.3s;
+                    }
+                    &:hover {
+                      color: #10284e;
+    
+                      &::after {
+                        width: 100%;
+                      }
+                    }
                   }
                 }
               }
+            }
             }
             .menu {
               display: none;
@@ -172,33 +431,31 @@
       margin-top: 1.63rem;
       .container {
         h1 {
-          font-size: 28px;
-          color: #10284e;
+          font-size: 1.13rem;
         }
         hr {
           background: #10284e;
           height: 3px;
           border: none;
         }
-        .areas {
-          margin-top: 1.5rem;
-          .area-img {
-            margin-top: 1.19rem;
-  
-            display: flex;
-            img {
-              width: 7rem;
-            }
-            .area-title {
-              margin-top: 3rem;
-              margin-left: 3rem;
-            }
-          }
-  
-          .area-des {
-            margin-top: 1.3rem;
-          }
+     
         }
+        .pra-des{
+            margin-left: 5%;
+            margin-right: 5%;
+          .pra-img{
+              margin-top:5.5rem;
+              display: flex;
+              .pra-title{
+                  margin-top: 1.4rem;
+                  font-size: 28px;
+                  color: #10284e;
+                  margin-left: 2rem;
+              }
+          }
+      }
+      .par{
+        font-size: 24px;
       }
     }
     .contact-form {
@@ -382,4 +639,6 @@
       }
     }
   }
+
+
   
