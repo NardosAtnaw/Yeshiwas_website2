@@ -1,3 +1,7 @@
+.container {
+  margin-left: 8px;
+  margin-right: 8px;
+}
 .contact-header {
     height: 50vh;
     background: rgba(16, 40, 78, 0.4) url(../Image/contact.jpg) no-repeat;
@@ -5,10 +9,10 @@
     background-blend-mode: overlay;
     background-position: center center;
     position: relative;
-    z-index: -1;
     .container {
         height: 100%;
-    
+        margin-left: 8px;
+        margin-right: 8px;
         .contact-homebg {
           height: 100%;
     
@@ -16,8 +20,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: #fff;
+            color: #10284e;
             .logo {
+              
               img {
                 width: 6rem;
               }
@@ -38,7 +43,7 @@
           .rank {
             position: absolute;
             bottom: 6.13rem;
-            color: #fff;
+            color: #10284e;
             text-align: center;
             h1 {
               b {
@@ -65,56 +70,87 @@
   }
   @include responsive($lg) {
     .contact-header {
-      height: 100vh;
+      height: 90vh;
       background: rgba(16, 40, 78, 0.4) url(../Image/contact.jpg) no-repeat;
       background-size: cover;
       background-blend-mode: overlay;
       background-position: center center;
       position: relative;
-      z-index: -1;
+    
       .container {
           height: 100%;
-      
-          .contact-homebg {
+
+                .contact-homebg {
             height: 100%;
       
             .nav {
               display: flex;
               justify-content: space-between;
               align-items: center;
-              color: #fff;
+              color: #10284e;
               .logo {
+                margin-left: 10px;
                 img {
-                  width: 6rem;
+                  width: 12rem;
                 }
               }
               .contact-cont1 {
                 display: block;
                 ul {
-                  display: flex;
+                  color: #10284e;
+                  top: 0em;
                   li {
+                    display: inline-block;
+                    line-height: 80px;
+                    margin: 0 5px;
+                    position: relative;
+    
                     a {
-                      color: #fff;
+                      color: #10284e;
+                      font-size: 25px;
+                      padding: 7px 13px;
+                      border-radius: 3px;
+                      &::after {
+                        content: "";
+                        position: absolute;
+                        background-color: #10284e;
+                        height: 2px;
+                        width: 0%;
+                        left: 0;
+                        bottom: -10px;
+                        transition: 0.3s;
+                      }
+                      &:hover {
+                        color: #10284e;
+    
+                        &::after {
+                          width: 100%;
+                        }
+                      }
                     }
                   }
                 }
               }
+              .menu {
+                display: none;
+              }
             }
             
             .rank {
-              position: absolute;
+              // position: absolute;
               bottom: 6.13rem;
-              color: #fff;
+              color:#10284e;
               text-align: center;
               h1 {
                 b {
-                  font-size: 36px;
+                  font-size: 6rem;
                 }
                 span {
-                  font-size: 1.38rem;
+                  font-size: 3.38rem;
                 }
               }
             }
+  
           }
         }
       .contact-fade {
@@ -128,6 +164,8 @@
             #ffffff 95.83%
           );
         }
-    }
+    } 
 
   }
+
+

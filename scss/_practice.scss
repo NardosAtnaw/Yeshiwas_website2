@@ -1,18 +1,21 @@
 .practice-header {
+
   height: 50vh;
   background: rgba(16, 40, 78, 0.4) url(../Image/pra.jpg) no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
   background-position: center center;
   position: relative;
-
+  // z-index: -1;
+        z-index: 999;
   .container {
+    margin-left: 8px;
+  margin-right: 8px;
     height: 100%;
     .practice-homebg {
       height: 100%;
-
+ 
       .nav {
-       
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -22,12 +25,13 @@
             width: 6rem;
           }
         }
-        .home-cont {
+        .practice-cont1 {
           display: none;
           ul {
+            
             display: flex;
             li {
-            
+              z-index: -1;
               a {
                 color: #fff;
               }
@@ -51,18 +55,31 @@
       }
     }
   }
+  .practice-fade {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15.5rem;
+    z-index: -1;
+    background: linear-gradient(
+      180deg,
+      rgba(196, 196, 196, 0.03) 32.29%,
+      #ffffff 95.83%
+    );
+  }
 }
 
 .consultation {
   margin-top: -4.25rem;
+  margin-left: 1rem;
   .container {
     width: 90%;
     height: auto;
-    z-index: 9999999;
     background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.25rem;
     .myform {
+      z-index: 9999999;
       display: flex;
       flex-direction: column;
       padding: 1rem;
@@ -96,11 +113,14 @@
   }
 }
 
-.practice {
-  margin-top: 1.63rem;
+.practice1 {
+  margin-top: 28rem;
+  margin-left: 12px;
+  margin-right: 12px;
   .container {
     h1 {
       font-size: 1.13rem;
+      color: #10284e;
     }
     hr {
       background: #10284e;
@@ -117,6 +137,7 @@
           width: 5rem;
         }
         .area-title {
+          font-size: 21px;
           margin-top: 2rem;
           margin-left: 1rem;
         }
@@ -129,10 +150,13 @@
   }
 }
 .contact-form {
+  margin-left: 12px;
+  margin-right: 12px;
   margin-top: 1.63rem;
   .container {
     h1 {
       font-size: 1.13rem;
+      color: #10284e;
     }
     hr {
       background: #10284e;
@@ -190,6 +214,7 @@
               text-align: center;
             }
             h5 {
+              
               margin-bottom: 0.2rem;
               text-align: center;
             }
@@ -214,6 +239,7 @@ footer {
 
   width: 100%;
   height: 100%;
+  z-index: 99;
   picture {
     position: absolute;
     top: 0;
@@ -237,6 +263,7 @@ footer {
 
       img {
         margin-top: 8.88rem;
+        width: 6rem;
       }
       .footer-moto {
         margin-top: 10.01rem;
@@ -252,7 +279,7 @@ footer {
       h3 {
         color: #fff;
         font-size: 18px;
-        margin-top: 0.5rem;
+        margin-top: 0.3rem;
       }
       .fo-des {
         margin-top: 1.5rem;
@@ -271,7 +298,7 @@ footer {
         color: #fff;
         font-size: 14px;
         .fo-li {
-          margin-top: 1rem;
+          margin-top: .5rem;
         }
       }
       img {
@@ -283,9 +310,11 @@ footer {
   .fo-copy {
     margin-top: 3.7rem;
     text-align: center;
-
     color: white;
     font-size: 10px;
+    img{
+      width: 10px;
+    }
   }
 }
 @include responsive($md) {
@@ -313,7 +342,19 @@ footer {
         }
       }
     }
+    .practice-fade {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 15.5rem;
+      background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0.03) 32.29%,
+        #ffffff 95.83%
+      );
+    }
   }
+
   .consultation {
     .container {
       border-radius: 2.25rem;
@@ -438,6 +479,7 @@ footer {
     position: relative;
     width: 100%;
     height: 100%;
+    z-index: 99;
     picture {
       position: absolute;
       top: 0;
@@ -512,69 +554,212 @@ footer {
       text-align: center;
       color: white;
       font-size: 20px;
+      img{
+        width: 15px;
+      }
     }
   }
 }
+
 @include responsive($lg) {
   .practice-header {
-    height: 50vh;
+    .container {
+      margin-left: 10px;
+      margin-right: 15px;
+      height: 100%;
+      .practice-homebg {
+        height: 100%;
+        .nav {
+          .logo {
+            img {
+              width: 10rem;
+            }
+          }
+        }
+        .rank {
+          h1 {
+            b {
+              font-size: 4.63rem;
+            }
+            span {
+              font-size: 2.38rem;
+            }
+          }
+        }
+      }
+    }
+    .practice-fade {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 15.5rem;
+      background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0.03) 32.29%,
+        #ffffff 95.83%
+      );
+    }
+  }
+  .consultation {
+    margin-top: -14.25rem;
+    .container {
+      width: 45%;
+      margin-right: 35px;
+      height: auto;
+      z-index: 9999999;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 1.25rem;
+      .myform {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        input {
+          padding: 1rem 0.5rem;
+          width: 100%;
+          margin-bottom: 1.19rem;
+          border: none;
+          background: rgba(53, 198, 218, 0.1);
+        }
+        .text-area {
+          padding-bottom: 4.44rem;
+          margin-bottom: 0.56rem;
+        }
+        input::placeholder {
+          color: #000;
+        }
+        h2 {
+          margin-bottom: 1.56rem;
+          text-align: center;
+        }
+        button {
+          padding: 0.5rem 2.88rem;
+          border: none;
+          background: #10284e;
+          color: #fff;
+          width: 8.25rem;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+
+  footer {
+   
+    .contanier {
+     
+      .footer-logo {
+        
+       
+
+        img {
+          margin-top: 14.88rem;
+          margin-left: 1.88rem;
+          width: 10.75rem;
+        }
+        .footer-moto {
+          margin-top: 19.01rem;
+          margin-left: 2.88rem;
+          color: white;
+          font-size: 28px;
+          text-align: center;
+        }
+      }
+      .footer-info {
+        margin-top: 1.05rem;
+        margin-left: 1.88rem;
+        color: #fff;
+        h3 {
+          color: #fff;
+          font-size: 24px;
+          margin-top: 0.5rem;
+        }
+        .fo-des {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          font-size: 21px;
+        }
+      }
+   
+    .fo-copy {
+      margin-top: 2.98rem;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      img{
+        width: 22px;
+      }
+      
+    }
+  }
+}
+}
+@include responsive($xl) {
+  .practice-header {
+    height: 90vh;
     background: rgba(16, 40, 78, 0.4) url(../Image/pra.jpg) no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
     background-position: center center;
     position: relative;
-  
+
     .container {
       height: 100%;
       .practice-homebg {
         height: 100%;
-  
         .nav {
-         
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          color: #fff;
           .logo {
             img {
-              width: 6rem;
+              width: 12rem;
             }
           }
           .practice-cont1 {
-            display: none;
+            display: block;
+            h2{
+              font-size: 32px;
+            }
             ul {
               display: flex;
-              z-index: 99999;
               li {
-              
                 a {
                   color: #fff;
                 }
               }
             }
           }
+          .menu {
+            display: none;
+          }
         }
         .rank {
-          position: absolute;
-          bottom: 6.13rem;
-          color: #fff;
-          text-align: center;
+          margin-left: 40px;
           h1 {
             b {
-              font-size: 2.63rem;
+              font-size: 6.63rem;
             }
             span {
-              font-size: 1.38rem;
+              font-size: 3.38rem;
             }
           }
         }
       }
     }
+    .practice-fade {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 20.5rem;
+      background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0.03) 32.29%,
+        #ffffff 95.83%
+      );
+    }
   }
   .consultation {
     margin-top: -15.25rem;
     .container {
-      width: 30%;
+      width: 35%;
       margin-right: 100px;
       height: auto;
       z-index: 9999999;
@@ -618,7 +803,7 @@ footer {
     margin-top: 1.63rem;
     .container {
       h1 {
-        font-size: 28px;
+        font-size: 48px;
         color: #10284e;
       }
       hr {
@@ -628,6 +813,8 @@ footer {
       }
       .areas {
         margin-top: 1.5rem;
+        margin-left: 60px;
+        margin-right: 60px;
         .area-img {
           margin-top: 1.19rem;
 
@@ -643,15 +830,19 @@ footer {
 
         .area-des {
           margin-top: 1.3rem;
+          margin-left: 40px;
         }
       }
     }
   }
   .contact-form {
     margin-top: 1.63rem;
+
     .container {
+      margin-left: 10px;
+        margin-right: 10px;
       h1 {
-        font-size: 28px;
+        font-size: 48px;
         color: #10284e;
       }
       hr {
@@ -659,7 +850,9 @@ footer {
         height: 3px;
         border: none;
       }
+      
       .cont-ful-form {
+        
         display: flex;
         margin-top: 1.5rem;
         width: 100%;
@@ -669,7 +862,7 @@ footer {
         border-radius: 1.25rem;
         .cont-info {
           width: 50%;
-          font-size: 22px;
+          font-size: 28px;
           padding: 1rem;
           color: #10284e;
           .cont-cont {
@@ -732,7 +925,7 @@ footer {
     }
   }
   footer {
-    margin-top: 2rem;
+    margin-top: .1rem;
     position: relative;
 
     width: 100%;
@@ -774,8 +967,8 @@ footer {
         }
       }
       .footer-info {
-        margin-top: 18rem;
-        margin-left: 1.88rem;
+        margin-top: 15rem;
+        margin-left: 5.88rem;
         margin-right: 1.88rem;
         color: #fff;
         width: 40%;
@@ -788,43 +981,48 @@ footer {
         }
         .fo-des {
           width: 20.5rem;
-          font-size:18px;
-          margin-bottom: 1rem;
-          margin-left: 7.88rem;
+          font-size:21px;
+          margin-bottom: 2rem;
+          margin-left: 10.88rem;
           text-align: center;
          
 
         }
       }
       .footer-contact {
-        margin-left: 1.88rem;
+        margin-left: 3.88rem;
         h3 {
           color: #fff;
           font-size: 28px;
-          margin-top: 16rem;
+          margin-top: 15rem;
           text-align: center;
         }
         .fo-cont {
-          margin-top: 0.5remrem;
+          margin-top: 0.5rem;
           margin-bottom: 1rem;
           color: #fff;
-          font-size: 22px;
+          font-size: 18px;
+          
 
           .fo-li {
             margin-top: 1rem;
           }
         }
         img {
-          margin-top: 0.5rem;
+          width: 2.5rem;
+          margin-top: 1.5rem;
           margin-right: 1.66rem;
         }
       }
     }
     .fo-copy {
-      margin-top: 8.98rem;
+      margin-top: 8rem;
       text-align: center;
       color: white;
-      font-size: 20px;
+      font-size: 15px;
+      img{
+        width: 15px;
+      }
     }
   }
 }

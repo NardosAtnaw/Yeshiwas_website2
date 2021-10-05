@@ -5,9 +5,11 @@
   background-blend-mode: overlay;
   background-position: center center;
   position: relative;
-  z-index: -1;
+
   .container {
     height: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
 
     .team-homebg {
       height: 100%;
@@ -36,7 +38,7 @@
       }
       .rank {
         position: absolute;
-        bottom: 6.13rem;
+        bottom: 5.13rem;
         color: #fff;
         text-align: center;
         h1 {
@@ -66,6 +68,8 @@
 .team-cont {
   margin-top: 1.63rem;
   .container {
+    margin-left: 8px;
+    margin-right: 8px;
     h1 {
       font-size: 1.13rem;
       color: #10284e;
@@ -100,11 +104,11 @@
   }
 
   .team-container .team .member img {
-    width: 180px;
+    width: 150px;
   }
 
   .team-container .team .member h3 {
-    font-size: 25px;
+    font-size: 20px;
     color: #10284e;
   }
 
@@ -116,8 +120,8 @@
   .team-container .team .member p {
     margin: 15px 0;
     font-weight: 300;
-    color: #003dc9;
-    font-size: 20px;
+    color: #10284e;
+    font-size: 18px;
     text-align: center;
   }
 }
@@ -149,11 +153,13 @@
       }
       .pra-des {
         font-size: 14px;
-        text-align: center;
+        margin-left: 1.5rem;
+        text-align: left;
       }
     }
   }
 }
+
 @include responsive($md) {
   .pract-cont {
     margin-top: 1.63rem;
@@ -198,13 +204,14 @@
     background-blend-mode: overlay;
     background-position: center center;
     position: relative;
-    z-index: -1;
+
     .container {
       height: 100%;
       .team-homebg {
         height: 100%;
         .nav {
           .logo {
+            margin-right: 10px;
             img {
               width: 8rem;
             }
@@ -225,6 +232,7 @@
           }
         }
         .rank {
+          margin-right: 100px;
           h1 {
             b {
               font-size: 5.63rem;
@@ -251,8 +259,10 @@
   .team-cont {
     margin-top: 1.63rem;
     .container {
+      margin-left: 8px;
+      margin-right: 8px;
       h1 {
-        font-size: 28px;
+        font-size: 2.13rem;
         color: #10284e;
       }
       hr {
@@ -338,89 +348,6 @@
         .pra-des {
           font-size: 20px;
           text-align: center;
-        }
-      }
-    }
-  }
-  .contact-form {
-    margin-top: 1.63rem;
-    .container {
-      h1 {
-        font-size: 28px;
-        color: #10284e;
-      }
-      hr {
-        background: #10284e;
-        height: 3px;
-        border: none;
-      }
-      .cont-ful-form {
-        display: flex;
-        margin-top: 1.5rem;
-        width: 100%;
-        height: auto;
-        background: #ffffff;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 1.25rem;
-        .cont-info {
-          width: 50%;
-          font-size: 22px;
-          padding: 1rem;
-          color: #10284e;
-          .cont-cont {
-            margin-top: 3rem;
-            img {
-              margin-right: 1.33rem;
-            }
-            color: #10284e;
-            font-size: 20px;
-            margin-top: 1.8rem;
-            margin-bottom: 0.8rem;
-          }
-        }
-        .cont-form {
-          width: 100%;
-          height: auto;
-          background: #ddf8fc;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          border-radius: 0 0 1.2rem 1.2rem;
-          .cont-myform {
-            .myform {
-              display: flex;
-              flex-direction: column;
-              padding: 1rem;
-              input {
-                padding: 1rem 0.5rem;
-                width: 100%;
-                margin-bottom: 1.19rem;
-                border: none;
-                background: rgba(255, 255, 255, 1);
-              }
-              .text-area {
-                padding-bottom: 4.44rem;
-                margin-bottom: 0.56rem;
-              }
-              input::placeholder {
-                color: #000;
-              }
-              h2 {
-                margin-bottom: 0.16rem;
-                text-align: center;
-              }
-              h5 {
-                margin-bottom: 0.2rem;
-                text-align: center;
-              }
-              button {
-                padding: 0.5rem 2.88rem;
-                border: none;
-                background: #10284e;
-                color: #fff;
-                width: 10.25rem;
-                align-self: flex-end;
-              }
-            }
-          }
         }
       }
     }
