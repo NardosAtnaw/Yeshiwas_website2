@@ -123,6 +123,45 @@ z-index: 999;
     }
   }
 }
+.practice2 {
+  margin-top: 1rem;
+  margin-left: 12px;
+  margin-right: 12px;
+  .container {
+    h1 {
+      font-size: 1.13rem;
+      color: #10284e;
+    }
+    hr {
+      background: #10284e;
+      height: 3px;
+      border: none;
+    }
+    .areas {
+      margin-top: 1.5rem;
+      .area-img {
+        margin-top: 1.19rem;
+
+        display: flex;
+        img {
+          width: 5rem;
+        }
+        .area-title {
+          color: #10284e;
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 2rem;
+          margin-left: 1rem;
+        }
+      }
+
+      .area-des {
+        margin-top: 1.3rem;
+      }
+    }
+  }
+}
+
 // .whowe{
 //   .inc-bg {
 //     position: relative;

@@ -71,7 +71,7 @@
 
 .consultation {
   margin-top: -4.25rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
   .container {
     width: 90%;
     height: auto;
@@ -137,6 +137,7 @@
           width: 5rem;
         }
         .area-title {
+          color: #10284e;
           font-size: 21px;
           margin-top: 2rem;
           margin-left: 1rem;
@@ -356,7 +357,10 @@ footer {
   }
 
   .consultation {
+    margin-top: -4.25rem;
+    margin-left: 3rem;
     .container {
+      margin-left: 2rem;
       border-radius: 2.25rem;
       .myform {
         h2 {
@@ -383,8 +387,8 @@ footer {
       }
     }
   }
-  .practice {
-    margin-top: 1.63rem;
+  .practice1 {
+    margin-top: 2.63rem;
     .container {
       h1 {
         font-size: 2.13rem;

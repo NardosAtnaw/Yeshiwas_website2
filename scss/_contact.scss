@@ -68,7 +68,7 @@
         );
       }
   }
-  @include responsive($lg) {
+  @include responsive($xl) {
     .contact-header {
       height: 90vh;
       background: rgba(16, 40, 78, 0.4) url(../Image/contact.jpg) no-repeat;
