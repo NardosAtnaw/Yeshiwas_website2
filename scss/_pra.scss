@@ -122,7 +122,8 @@
   }
 
   .prac {
-    margin-top: 1.63rem;
+    margin-top: 20rem;
+
     .container {
       h1 {
         font-size: 2rem;
@@ -154,7 +155,7 @@
 
 @include responsive($lg) {
   .prac-header {
-    height: 90vh;
+    height: 50vh;
     background: rgba(16, 40, 78, 0.4) url(../Image/prac.jpg) no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
@@ -173,7 +174,7 @@
             }
           }
           .prac-cont1 {
-            display: block;
+            display: none;
             ul {
               color: #fff;
               top: 0em;
@@ -188,6 +189,7 @@
                   font-size: 25px;
                   padding: 7px 13px;
                   border-radius: 3px;
+                  text-decoration: none;
                   &::after {
                     content: "";
                     position: absolute;
@@ -210,9 +212,7 @@
             }
           }
         }
-        .menu {
-          display: none;
-        }
+        
       }
       .rank {
         margin-left: 20px;
@@ -239,7 +239,7 @@
     }
   }
   .prac {
-    margin-top: 1.63rem;
+    margin-top: 20rem;
     .container {
       margin-left: 10px;
       margin-right: 10px;
@@ -290,6 +290,7 @@
         height: 100%;
         .nav {
           .logo {
+            margin-top: 8px;
             margin-left: 10px;
             img {
               width: 12rem;
@@ -362,7 +363,7 @@
     }
   }
   .prac {
-    margin-top: 1.63rem;
+    margin-top: 20rem;
     .container {
       margin-left: 10px;
       margin-right: 10px;
@@ -382,17 +383,22 @@
       .pra-img {
         margin-top: 5.5rem;
         display: flex;
+        img{
+          width: 7rem;
+        }
         .pra-title {
           margin-top: 1.4rem;
-          font-size: 28px;
+          font-size: 32px;
           color: #10284e;
           margin-left: 2rem;
         }
       }
     }
     .par {
-      font-size: 24px;
+      font-size: 32px;
       .pra-step {
+        color: #10284e;
+
       }
     }
   }

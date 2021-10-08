@@ -5,7 +5,7 @@
   background-blend-mode: overlay;
   background-position: center center;
   position: relative;
-z-index: 999;
+  z-index: 999;
   .container {
     margin-left: 8px;
     margin-right: 8px;
@@ -162,72 +162,7 @@ z-index: 999;
   }
 }
 
-// .whowe{
-//   .inc-bg {
-//     position: relative;
-//     height: 700px;
-//     .skew-element {
-//       position: absolute;
-//       top: 0;
-//       right: 0;
-//       width: 100%;
-//       height: 100%;
-//       z-index: -1;
-//       background-color: #fff;
-//       -ms-transform: skewY(-2deg);
-//       transform: skewY(-2deg);
-//     }
-//   }
 
-//   .mid-po {
-//     position: relative;
-
-//     img {
-//       top: 0;
-//       position: absolute;
-//       width: 100%;
-//       z-index: -1;
-//     }
-
-//     .title {
-//       color: #10284e;
-//       text-align: left;
-//       font-size: 40px;
-//       margin-top: 10px;
-//       margin-left: 20px;
-
-//       .line {
-//         border: 0;
-//         height: 3px;
-//         background: #10284e;
-//         background-image: linear-gradient(to right, #ccc, #10284e, #ccc);
-//       }
-//     }
-//   }
-//   .mid-button {
-//     .mid-butt {
-//       color: #fff;
-//       font-size: 25px;
-//       background-color: #10284e;
-//       width: 500px;
-//       height: 70px;
-//       margin-right: 50px;
-//     }
-//   }
-
-//   .desc-who {
-//     text-align: center;
-//     p {
-//       color: #10284e;
-//       margin-top: 120px;
-//       margin-left: 150px;
-//       margin-bottom: 100px;
-//       margin-right: 150px;
-//       font-size: 25px;
-//       text-align: center;
-//     }
-//   }
-// }
 
 @include responsive($lg) {
   .whowe {
@@ -289,6 +224,7 @@ z-index: 999;
   }
 
   .whowe {
+    margin-top: 28rem;
     .inc-bg {
       position: relative;
       height: 700px;
@@ -372,6 +308,8 @@ z-index: 999;
           align-items: center;
           color: #fff;
           .logo {
+            margin-top: 8px;
+            margin-left: 10px;
             img {
               width: 12rem;
             }
@@ -381,11 +319,39 @@ z-index: 999;
             h2 {
               font-size: 32px;
             }
+            
             ul {
-              display: flex;
+              color: #fff;
+              top: 0em;
               li {
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+                position: relative;
+
                 a {
                   color: #fff;
+                  font-size: 25px;
+                  padding: 7px 13px;
+                  border-radius: 3px;
+                  text-decoration: none;
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: #10284e;
+                    height: 2px;
+                    width: 0%;
+                    left: 0;
+                    bottom: -5px;
+                    transition: 0.3s;
+                  }
+                  &:hover {
+                    color: #10284e;
+
+                    &::after {
+                      width: 100%;
+                    }
+                  }
                 }
               }
             }
@@ -419,10 +385,54 @@ z-index: 999;
       );
     }
   }
+  .practice2 {
+    margin-top: 1rem;
+    margin-left: 12px;
+    margin-right: 12px;
+    .container {
+      h1 {
+        font-size: 40px;
+        color: #10284e;
+      }
+      hr {
+        background: #10284e;
+        height: 3px;
+        border: none;
+      }
+      .areas {
+        margin-left: 10px;
+        margin-top: 1.5rem;
+        .area-img {
+          margin-top: 1.19rem;
+  
+          display: flex;
+          img {
+            width: 8rem;
+          }
+          .area-title {
+            color: #10284e;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 2.63rem;
+            margin-left: 2rem;
+          }
+        }
+  
+        .area-des {
+          margin-left: 30px;
+          margin-right: 30px;
+          margin-top: 1.3rem;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
   .whowe {
+    margin-top: 20rem;
     .inc-bg {
       position: relative;
-      height: 700px;
+     // height: 700px;
       .skew-element {
         position: absolute;
         top: 0;
@@ -479,9 +489,9 @@ z-index: 999;
         color: #10284e;
         margin-top: 120px;
         margin-left: 150px;
-        margin-bottom: 100px;
+        margin-bottom: 30px;
         margin-right: 150px;
-        font-size: 25px;
+        font-size: 29px;
         text-align: center;
       }
     }
