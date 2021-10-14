@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
     <title>Contact</title>
 </head>
@@ -21,6 +22,9 @@
                       We Won’t Stop Until We Win/For Consulations
                       <img class="ic1" src="Image/call3.svg"/> +251 911 58 1616
                     </h2>
+                    <div class="close-btn">
+                      <i class='bx bx-x bx-md'></i>
+                    </div>
         
                     <ul>
                       <li><a href="index.html">Home</a></li>
@@ -59,13 +63,13 @@
         <div class="cont-info">
          <b>We don’t beg, but claim Justice!!</b> 
           <div class="cont-cont">
-            <img src="Image/Vector.svg" alt=""> Behind Federal High Court- Arada Bench
+            <img src="./Image/Vector.svg" alt=""> Behind Federal High Court- Arada Bench
           </div>
           <div class="cont-cont">
-            <img src="Image/phone.svg" alt=""> 0927 21 2121 / 09 11 58 1616
+            <img src="./Image/phone.svg" alt=""> 0927 21 2121 / 09 11 58 1616
           </div>
           <div class="cont-cont">
-            <img src="Image/email.svg" alt=""> yes202711@gmail.com
+            <img src="./Image/email.svg" alt=""> yes202711@gmail.com
           </div>
         </div> 
         <div class="cont-form">
@@ -101,7 +105,7 @@
         </picture>
         <div class="contanier">
           <div class="footer-logo">
-        <img src="Image/logo1.svg" alt="">
+        <img src="./Image/logo1.svg" alt="">
         <div class="footer-moto">
           WE WON’T STOP UNTILL WE WIN
         </div>
@@ -130,13 +134,38 @@
         
           <img src="Image/text.svg" alt="">
          
-          <img src="Image/insta.svg" alt="">
+          <img src="./Image/insta.svg" alt="">
        
       </div>
          </div>
       <div class="fo-copy">
-        <img class="foot" src="Image/copyright.svg"/> Copyright 2021 Yeshiwas Eyasu
+        <img class="foot" src="./Image/copyright.svg"/> Copyright 2021 Yeshiwas Eyasu
       </div>
       </footer>
   </body>
+  <script>
+    window.addEventListener('scroll', () => {
+  const nav = document.querySelector('.nav')
+  const navHeight = nav.getBoundingClientRect().height;
+  const scrollHeight = window.pageYOffset;
+  if(scrollHeight > navHeight){
+    
+    nav.classList.add('fixed1')
+  }else{
+    nav.classList.remove('fixed1')
+  }
+})
+
+const menu = document.querySelector('.menu')
+const sidenav = document.querySelector('.contact-cont1')
+const close = document.querySelector('.close-btn')
+menu.addEventListener('click', () =>{
+  sidenav.classList.add('show-nav')
+  console.log("clicked");
+})
+close.addEventListener('click',() =>{
+  sidenav.classList.remove('show-nav')
+})
+
+  </script>
   </html>

@@ -5,11 +5,11 @@
   background-blend-mode: overlay;
   background-position: center center;
   position: relative;
+  z-index: 9999;
 
   .container {
     height: 100%;
-    margin-left: 8px;
-    margin-right: 8px;
+    
 
     .team-homebg {
       height: 100%;
@@ -25,12 +25,49 @@
           }
         }
         .team-cont1 {
-          display: none;
+          // display: none;
+          background: #10284e;
+          z-index: 999999;
+          position: fixed;
+          width: 80vw;
+          height: 100vh;
+          top: 0;
+          right: -80vw;
+          transition: all .3s linear;
+          h2{
+            display: none;
+          }
           ul {
             display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 50%;
+            padding-left: 2rem;
+            list-style: none;
             li {
               a {
                 color: #fff;
+                font-size: 25px;
+                text-decoration: none;
+                padding: 7px 13px;
+                border-radius: 3px;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  background-color: #fff;
+                  height: 2px;
+                  width: 0%;
+                  left: 0;
+                  bottom: -10px;
+                  transition: 0.3s;
+                }
+                &:hover {
+                  color: #fff;
+
+                  &::after {
+                    width: 100%;
+                  }
+                }
               }
             }
           }
@@ -148,7 +185,7 @@
       margin-top: 1rem;
       .pra-img {
         img {
-          width: 5rem;
+          width: 4rem;
         }
       }
       .pra-des {
@@ -178,8 +215,10 @@
 
     .pra-left {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr ;
       margin-top: 2rem;
+      margin-left: 10px;
+      margin-right: 10px;
       .pra-list {
         display: flex;
         margin-top: 1rem;
@@ -191,6 +230,40 @@
         .pra-des {
           font-size: 14px;
           text-align: center;
+        }
+      }
+    }
+  }
+  .pract-cont {
+    margin-top: 1.63rem;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+    .container {
+      h1 {
+        font-size: 1.13rem;
+        color: #10284e;
+      }
+      hr {
+        background: #10284e;
+        height: 3px;
+        border: none;
+      }
+    }
+  
+    .pra-left {
+      margin-top: 2rem;
+      .pra-list {
+        display: flex;
+        margin-top: 1rem;
+        .pra-img {
+          img {
+            width: 5rem;
+          }
+        }
+        .pra-des {
+          font-size: 14px;
+          margin-left: 1.5rem;
+          text-align: left;
         }
       }
     }
@@ -371,6 +444,221 @@
             margin-top: 8px;
             margin-left: 10px;
             img {
+              width: 10rem;
+            }
+          }
+          .team-cont1 {
+            display: block;
+            background: transparent;
+            z-index: 999999;
+            position: static;
+            width: auto;
+            height: auto;
+            top: 0;
+            right: 0vw;
+            transition: all .3s linear;
+            .close-btn{
+              display: none;
+            }
+            h2{
+              font-size: 21px;
+              display: block;
+            }
+            ul {
+              color: #fff;
+              flex-direction: row;
+              top: 0em;
+              li {
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+                position: relative;
+
+                a {
+                  color: #fff;
+                  font-size: 18px;
+                  padding: 7px 13px;
+                  border-radius: 3px;
+                  text-decoration: none;
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: #fff;
+                    height: 1px;
+                    width: 0%;
+                    left: 0;
+                    bottom: -10px;
+                    transition: 0.2s;
+                  }
+                  &:hover {
+                    color: #fff;
+
+                    &::after {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .menu {
+            display: none;
+          }
+        }
+        .rank {
+          margin-right: 100px;
+          z-index: 99;
+          h1 {
+            b {
+              font-size: 5.63rem;
+            }
+            span {
+              font-size: 2.38rem;
+            }
+          }
+        }
+      }
+    }
+    .team-fade {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 25.5rem;
+      background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0.03) 32.29%,
+        #ffffff 95.83%
+      );
+    }
+  }
+  .team-cont {
+    margin-top: 1.63rem;
+    .container {
+      margin-left: 8px;
+      margin-right: 8px;
+      h1 {
+        font-size: 40px;
+        color: #10284e;
+      }
+      hr {
+        background: #10284e;
+        height: 3px;
+        border: none;
+      }
+    }
+    .team-container {
+      margin-top: 50px;
+      width: 100%;
+      img {
+        border-radius: 50%;
+      }
+    }
+    .team-container .team {
+      width: auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+  
+    .team-container .team .member {
+      width: 625px;
+      margin: 10px;
+      border-radius: 6px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+      padding: 25px;
+    }
+  
+    .team-container .team .member img {
+      width: 180px;
+    }
+  
+    .team-container .team .member h3 {
+      font-size: 28px;
+      color: #10284e;
+    }
+  
+    .team-container .team .member span {
+      font-size: 24px;
+      color: #10284e;
+    }
+  
+    .team-container .team .member p {
+      margin: 15px 0;
+      font-weight: 300;
+      color: #10284e;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+  .pract-cont {
+    margin-top: 1.63rem;
+
+    .container {
+      h1 {
+        font-size: 40px;
+      }
+      hr {
+        background: #10284e;
+        height: 4px;
+        border: none;
+      }
+    }
+
+    .pra-left {
+        margin-left: 2.9rem;
+        margin-right: 2.9rem;
+      display: grid;
+      gap:0.5rem;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 2rem;
+      .pra-list {
+        display: flex;
+        margin-top: 1rem;
+        width: 40.44rem;
+        height: 250px;
+        padding: 1rem;
+      
+        transition: all 0.3s linear;
+        &:hover{
+          background: #10284e;
+          border-radius: 4rem;
+          color:white;
+          
+        }
+        .pra-img {
+          img {
+            width: 5rem;
+          }
+        }
+        .pra-des {
+          font-size: 21px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+@include responsive($xxl) {
+  .team-header {
+    height: 90vh;
+    background: rgba(16, 40, 78, 0.4) url(../Image/ourteam.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center center;
+    position: relative;
+
+    .container {
+      height: 100%;
+      .team-homebg {
+        height: 100%;
+        .nav {
+          .logo {
+            margin-top: 8px;
+            margin-left: 10px;
+            img {
               width: 12rem;
             }
           }
@@ -398,7 +686,7 @@
                   &::after {
                     content: "";
                     position: absolute;
-                    background-color: #10284e;
+                    background-color: #fff;
                     height: 2px;
                     width: 0%;
                     left: 0;
@@ -406,7 +694,7 @@
                     transition: 0.3s;
                   }
                   &:hover {
-                    color: #10284e;
+                    color: #fff;
 
                     &::after {
                       width: 100%;

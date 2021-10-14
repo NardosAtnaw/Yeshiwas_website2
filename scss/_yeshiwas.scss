@@ -24,16 +24,52 @@
           }
         }
         .yeshiwas-cont1 {
-          display: none;
-          ul {
-            display: flex;
-            li {
-              z-index: -1;
-              a {
-                color: #fff;
-              }
-            }
-          }
+           // display: none;
+           background: #10284e;
+           z-index: 999999;
+           position: fixed;
+           width: 80vw;
+           height: 100vh;
+           top: 0;
+           right: -80vw;
+           transition: all .3s linear;
+           h2{
+             display: none;
+           }
+           ul {
+             display: flex;
+             flex-direction: column;
+             justify-content: space-around;
+             height: 50%;
+             padding-left: 2rem;
+             list-style: none;
+             li {
+               a {
+                 color: #fff;
+                 font-size: 25px;
+                 text-decoration: none;
+                 padding: 7px 13px;
+                 border-radius: 3px;
+                 &::after {
+                   content: "";
+                   position: absolute;
+                   background-color: #fff;
+                   height: 2px;
+                   width: 0%;
+                   left: 0;
+                   bottom: -10px;
+                   transition: 0.3s;
+                 }
+                 &:hover {
+                   color: #fff;
+ 
+                   &::after {
+                     width: 100%;
+                   }
+                 }
+               }
+             }
+           }
         }
       }
       .rank {
@@ -102,7 +138,9 @@
     }
   }
   .desc-who {
-    margin-top: 0.5rem;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 2rem;
     text-align: center;
     p {
       color: #10284e;
@@ -124,7 +162,7 @@
   }
 }
 .practice2 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: 12px;
   margin-right: 12px;
   .container {
@@ -139,29 +177,162 @@
     }
     .areas {
       margin-top: 1.5rem;
-      .area-img {
-        margin-top: 1.19rem;
-
-        display: flex;
-        img {
-          width: 5rem;
+      .area-cont{
+        padding: 1rem;
+        transition: all 0.3s linear;
+        &:hover{
+          background: #ECF0FD;
+          border-radius: 3rem;
+          
         }
-        .area-title {
-          color: #10284e;
-          font-size: 18px;
-          font-weight: bold;
-          margin-top: 2rem;
-          margin-left: 1rem;
+        a{
+          text-decoration: none;
+          color:black;
         }
+        .area-img {
+          margin-top: 1.19rem;
+  
+          display: flex;
+          img {
+            width: 4rem;
+          }
+          .area-title {
+            color: #10284e;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 1rem;
+            margin-left: .7rem;
+          }
+        }
+  
+        .area-des {
+          margin-top: 1.3rem;
+          font-size: 14px;
+        }
+  
       }
-
-      .area-des {
-        margin-top: 1.3rem;
-      }
+     
     }
   }
 }
 
+@include responsive($md){
+  .whowe {
+    margin-top: 30rem;
+    .inc-bg {
+      position: relative;
+      height: 500px;
+      .skew-element {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #f5feff;
+        -ms-transform: skewY(-5deg);
+        transform: skewY(-5deg);
+      }
+    }
+    .mid-po {
+      margin-top: 2rem;
+      margin-left: 8px;
+      margin-right: 8px;
+      position: relative;
+  
+      .title {
+        color: #10284e;
+        text-align: left;
+        font-size: 30px;
+        margin-top: 10px;
+  
+        .line {
+          background: #10284e;
+          height: 3px;
+          border: none;
+        }
+      }
+    }
+    .desc-who {
+      margin-left: 8px;
+      margin-right: 8px;
+      margin-top: 3rem;
+      text-align: center;
+      p {
+        color: #10284e;
+  
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    .mid-button {
+      .mid-butt {
+        margin-top: 2rem;
+        padding: 0.5rem 2.88rem;
+        border: none;
+        background: #10284e;
+        color: #fff;
+        width: 10.25rem;
+        align-self: flex-end;
+      }
+    }
+  }
+  .practice2 {
+    margin-top: 2rem;
+   
+    .container {
+      h1 {
+        font-size: 30px;
+        color: #10284e;
+      }
+      hr {
+        background: #10284e;
+        height: 3px;
+        border: none;
+      }
+      .areas {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 1.5rem;
+        .area-cont{
+          padding: 1rem;
+          transition: all 0.3s linear;
+          &:hover{
+            background: #ECF0FD;
+            border-radius: 3rem;
+            
+          }
+          a{
+            text-decoration: none;
+            color:black;
+          }
+          .area-img {
+            margin-top: 1.19rem;
+    
+            display: flex;
+            img {
+              width: 4rem;
+            }
+            .area-title {
+              color: #10284e;
+              font-size: 21px;
+              font-weight: bold;
+              margin-top: 1rem;
+              margin-left: .7rem;
+            }
+          }
+    
+          .area-des {
+            margin-top: 1.3rem;
+            font-size: 14px;
+          }
+    
+        }
+       
+      }
+    }
+  }
+}
 
 
 @include responsive($lg) {
@@ -290,8 +461,246 @@
       }
     }
   }
+  .practice2 {
+    margin-top: 5rem;
+
+  }
 }
+
 @include responsive($xl) {
+  .yeshiwas-header {
+    height: 90vh;
+
+    .container {
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 100%;
+      .yeshiwas-homebg {
+        height: 100%;
+
+        .nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #fff;
+          .logo {
+            margin-top: 8px;
+            margin-left: 10px;
+            img {
+              width: 10rem;
+            }
+          }
+          .yeshiwas-cont1 {
+            display: block;
+            background: transparent;
+            z-index: 999999;
+            position: static;
+            width: auto;
+            height: auto;
+            top: 0;
+            right: 0vw;
+            transition: all .3s linear;
+            .close-btn{
+              display: none;
+            }
+            h2{
+              font-size: 21px;
+              display: block;
+            }
+            ul {
+              color: #fff;
+              flex-direction: row;
+              top: 0em;
+              li {
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+                position: relative;
+
+                a {
+                  color: #fff;
+                  font-size: 18px;
+                  padding: 7px 13px;
+                  border-radius: 3px;
+                  text-decoration: none;
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: #fff;
+                    height: 1px;
+                    width: 0%;
+                    left: 0;
+                    bottom: -10px;
+                    transition: 0.2s;
+                  }
+                  &:hover {
+                    color: #fff;
+
+                    &::after {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .menu {
+            display: none;
+          }
+        }
+        .rank {
+          margin-left: 40px;
+          h1 {
+            b {
+              font-size: 4.63rem;
+            }
+            span {
+              font-size: 2.38rem;
+            }
+          }
+        }
+      }
+    }
+    .yeshiwas-fade {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 25.5rem;
+      background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0.03) 32.29%,
+        #ffffff 95.83%
+      );
+    }
+  }
+  .practice2 {
+    margin-top: 4rem;
+    margin-left: 12px;
+    margin-right: 12px;
+    .container {
+      h1 {
+        font-size: 40px;
+        color: #10284e;
+      }
+      hr {
+        background: #10284e;
+        height: 3px;
+        border: none;
+      }
+      .areas {
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+      .area-cont{
+        padding: 1rem;
+        transition: all 0.3s linear;
+        &:hover{
+          background: #ECF0FD;
+          border-radius: 3rem;
+          
+        }
+        a{
+          text-decoration: none;
+          color:black;
+        }
+        .area-img {
+          margin-top: 1.19rem;
+  
+          display: flex;
+          img {
+            width: 7rem;
+          }
+          .area-title {
+            color: #10284e;
+            font-size: 24px;
+            margin-top: 2rem;
+            margin-left: 1rem;
+          }
+        }
+  
+        .area-des {
+          margin-top: 1.3rem;
+          font-size: 21px;
+        }
+  
+      }
+       
+      }
+    }
+  }
+
+  .whowe {
+    margin-top: 20rem;
+    .inc-bg {
+      position: relative;
+     // height: 700px;
+      .skew-element {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #f5feff;
+        -ms-transform: skewY(-3deg);
+        transform: skewY(-3deg);
+      }
+    }
+
+    .mid-po {
+      position: relative;
+
+      img {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+      }
+
+      .title {
+        color: #10284e;
+        text-align: left;
+        font-size: 40px;
+        margin-top: 10px;
+        margin-left: 20px;
+
+        .line {
+          border: 0;
+          height: 3px;
+          background: #10284e;
+          background-image: linear-gradient(to right, #ccc, #10284e, #ccc);
+        }
+      }
+    }
+    .mid-button {
+      .mid-butt {
+        color: #fff;
+        font-size: 25px;
+        background-color: #10284e;
+        width: 400px;
+        height: 50px;
+        margin-right: 50px;
+      }
+    }
+
+    .desc-who {
+      text-align: center;
+
+      p {
+        color: #10284e;
+        margin-top: 120px;
+        margin-left: 150px;
+        margin-bottom: 30px;
+        margin-right: 150px;
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include responsive($xxl) {
   .yeshiwas-header {
     height: 90vh;
 
@@ -338,7 +747,7 @@
                   &::after {
                     content: "";
                     position: absolute;
-                    background-color: #10284e;
+                    background-color: #fff;
                     height: 2px;
                     width: 0%;
                     left: 0;
@@ -346,7 +755,7 @@
                     transition: 0.3s;
                   }
                   &:hover {
-                    color: #10284e;
+                    color: #fff;
 
                     &::after {
                       width: 100%;

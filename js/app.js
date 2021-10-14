@@ -14,3 +14,28 @@ client1.addEventListener('mouseleave', () =>{
   client2.addEventListener('mouseleave', () =>{
       client2.setAttribute('src','./Image/clients2.svg')
     })
+
+
+
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('.nav')
+  const navHeight = nav.getBoundingClientRect().height;
+  const scrollHeight = window.pageYOffset;
+  if(scrollHeight > navHeight){
+    
+    nav.classList.add('fixed')
+  }else{
+    nav.classList.remove('fixed')
+  }
+})
+
+const menu = document.querySelector('.menu')
+const sidenav = document.querySelector('.home-cont')
+const close = document.querySelector('.close-btn')
+menu.addEventListener('click', () =>{
+  sidenav.classList.add('show-nav')
+  console.log("clicked");
+})
+close.addEventListener('click',() =>{
+  sidenav.classList.remove('show-nav')
+})

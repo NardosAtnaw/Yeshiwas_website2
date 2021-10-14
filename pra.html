@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="./css/style.css">
   <title>Practice_page</title>
 </head>
@@ -21,8 +22,11 @@
           <div class="prac-cont1">
             <h2>
               We Won’t Stop Until We Win/For Consulations
-              <img class="ic1" src="Image/Call1.svg" />+251 911 58 1616
+              <img class="ic1" src="/Image/Call1.svg" />+251 911 58 1616
             </h2>
+            <div class="close-btn">
+              <i class='bx bx-x bx-md'></i>
+            </div>
 
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -94,7 +98,7 @@
         </br>
         <p> </br>
         <div class="pra-step"> 
-          <b> How to Win This Kinda Case? </b> 
+          <b> How to Win This Kind of Case? </b> 
         </div>
         </p> </br>
         1.The 3 Ws of Storytelling
@@ -200,5 +204,30 @@
 
 
 </body>
+<script >
+    window.addEventListener('scroll', () => {
+  const nav = document.querySelector('.nav')
+  const navHeight = nav.getBoundingClientRect().height;
+  const scrollHeight = window.pageYOffset;
+  if(scrollHeight > navHeight){
+    
+    nav.classList.add('fixed')
+  }else{
+    nav.classList.remove('fixed')
+  }
+})
+
+const menu = document.querySelector('.menu')
+const sidenav = document.querySelector('.prac-cont1')
+const close = document.querySelector('.close-btn')
+menu.addEventListener('click', () =>{
+  sidenav.classList.add('show-nav')
+  console.log("clicked");
+})
+close.addEventListener('click',() =>{
+  sidenav.classList.remove('show-nav')
+})
+
+</script>
 
 </html>
